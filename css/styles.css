@@ -976,9 +976,16 @@ background-color: #404bbf;
     letter-spacing: 0.04em;
     color: #8e8f99;
 }
-input:checked + .span-modal {
+:root {
     background-color: #404bbf;
+    fill-color: #F4F4FD;
+}
+input:checked + .span-modal {
+    background-color: var(--bg-color);
     border: none;
     fill: #F4F4FD;;
+}
+.span-modal svg {
+    fill: var(--fill-color);
 }
 
