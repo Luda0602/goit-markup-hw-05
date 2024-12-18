@@ -919,17 +919,23 @@ footer .container {
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
             border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.button-modal:hover,
+.button-modal:hover {
+    background-color: #404bbf;
+    border: none;
+}
+
 .button-modal:focus{
     background-color: #404bbf;
         border: transparent;
         fill: #ffffff;
 }
-.button-modal:hover .svg-modal,
- .button-modal:focus .svg-modal {
-    fill: #ffffff;
+.button-modal:hover{
+background-color: #404bbf;
     border: transparent;
- }
+    fill: #ffffff;
+}
+
+
  .label-div {
     position: relative;
         transition: color 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -973,9 +979,15 @@ footer .container {
  label .span-modal {
      display: inline-flex;
  }
- [type='checkbox']:checked+label .span-modal {
-     background-color: #404bbf;
-     border: none;
-     fill: #f4f4fd;
- }
  
+.user-privacy {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+}
+input:checked + .span-modal {
+    background-color: #404bbf;
+    border: none;
+    fill: #F4F4FD;;
+}
