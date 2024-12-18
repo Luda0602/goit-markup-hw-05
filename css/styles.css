@@ -778,12 +778,6 @@ footer .container {
   top: 0;
   left: 0;
   background-color: rgba(46, 47, 66, 0.4);
-  z-index: 1000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  pointer-events: none;
-  opacity: 0;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
   visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -801,8 +795,9 @@ footer .container {
         top: 50%;
         left: 50%;
         gap: 8px;
-        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
-            0 2px 1px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+        0 1px 3px 0 rgba(0, 0, 0, 0.12),
+        0 2px 1px 0 rgba(0, 0, 0, 0.2);
         background: #fcfcfc;
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -838,10 +833,12 @@ footer .container {
 .input-label-div:focus {
     border-color: #4d5ae5;
 }
+.input-label-div:focus + .svg-modal-two {
+    fill: #4d5ae5;
+}
 .a-modal {
-    text-decoration: underline;
-        color: #4d5ae5;
-        cursor: pointer;
+     color: #4d5ae5;
+       
 }
 .label-modal {
     font-weight: 400;
@@ -873,7 +870,7 @@ footer .container {
 }
 .div-button-modal {
     display: block;
-        border-radius: 4px;
+
         padding: 16px 32px;
         min-width: 169px;
         height: 56px;
@@ -896,11 +893,6 @@ footer .container {
     background-color: #404bbf;
 }
 .svg-modal {
-    border-radius: 100%;
-        fill: #2e2f42;
-        stroke-width: 1px;
-        stroke: rgba(0, 0, 0, 0.1);
-        width: 100%;
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -924,24 +916,23 @@ footer .container {
 .button-modal:focus {
 background-color: #404bbf;
     border: none;
-    fill: #ffffff;
+    
 }
 .button-modal:hover  {
 background-color: #404bbf;
     border: none;
-    fill: #ffffff;
+  
 }
 
 
  .label-div {
     position: relative;
-        transition: color 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+       
  }
  .svg-modal-two {
     position: absolute;
         top: 50%;
         left: 16px;
-        fill: #2e2f42;
         transform: translateY(-50%);
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
@@ -983,7 +974,7 @@ background-color: #404bbf;
     letter-spacing: 0.04em;
     color: #8e8f99;
 }
-.input-div:checked+.label-two .span-modal {
+.input-div:checked +.label-two .span-modal {
     background-color: #404bbf;
     border: none;
     fill: #F4F4FD;
@@ -995,5 +986,6 @@ background-color: #404bbf;
     letter-spacing: 0.04em;
     color: #8e8f99;
 }
+
 
 
