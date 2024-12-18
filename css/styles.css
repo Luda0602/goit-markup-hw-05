@@ -820,6 +820,9 @@ footer .container {
         line-height: 1.17;
         letter-spacing: 0.04em;
         color: #8e8f99;
+        display: block;
+        margin-bottom: 4px;
+
         
 }
 .input-label-div {
@@ -918,8 +921,12 @@ footer .container {
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
             border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.button-modal:hover, .button-modal:focus {
+.button-modal:focus {
+background-color: #404bbf;
+    border: none;
+    fill: #ffffff;
+}
+.button-modal:hover  {
 background-color: #404bbf;
     border: none;
     fill: #ffffff;
@@ -976,16 +983,17 @@ background-color: #404bbf;
     letter-spacing: 0.04em;
     color: #8e8f99;
 }
-:root {
+.input-div:checked+.label-two .span-modal {
     background-color: #404bbf;
-    fill-color: #F4F4FD;
-}
-input:checked + .span-modal {
-    background-color: var(--bg-color);
     border: none;
-    fill: #F4F4FD;;
+    fill: #F4F4FD;
+    ;
 }
-.span-modal svg {
-    fill: var(--fill-color);
+.label-two {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
 }
+
 
