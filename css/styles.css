@@ -303,6 +303,7 @@ header .logo-full {
 
 .section-main-title {
     padding: 0;
+    margin: 0 auto;
 }
 
 .main-header {
@@ -697,7 +698,7 @@ footer .container {
 .input-footer::placeholder {
     color: #ffffff;
 }
-.button-form {
+.btn-form{
     min-width: 165px;
         height: 40px;
         display: flex;
@@ -712,10 +713,12 @@ footer .container {
         background-color: #4D5AE5;
         border: none;
         border-radius: 4px;
+        
         font-weight: 500;
 }
 .svg-form {
         margin-left: 16px;
+        
 }
 
 /* modal window */
