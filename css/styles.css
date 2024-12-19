@@ -709,17 +709,17 @@ footer .container {
 }
 .button-form {
     min-width: 165px;
-    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: "Roboto", sans-serif;
     font-size: 16px;
     line-height: 1.5;
+    height: 40px;
     letter-spacing: 0.04em;
     color: #ffffff;
     cursor: pointer;
-    background-color: #4D5AE5;
+    background-color:#4D5AE5;
     border: none;
     border-radius: 4px;
     font-weight: 500;
@@ -897,7 +897,7 @@ footer .container {
 .div-button-modal {
     display: block;
         min-width: 169px;
-        height: 40px;
+        height: 56px;
         font-family: "Roboto", sans-serif;
         font-size: 16px;
         font-weight: 500;
@@ -909,4 +909,5 @@ footer .container {
         border: none;
         margin-left: auto;
         margin-right: auto;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
